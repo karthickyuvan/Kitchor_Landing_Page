@@ -1,0 +1,419 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+body
+{
+    background-color: #23262d;
+}
+
+:root {
+  ---global-color-primary: #daa14c;
+  ---global-color-secondary: #30373e;
+  ---global-color-text: #535353;
+  ---global-color-accent: #30373e;
+  ---global-color-lighter: #9b9b9b;
+  ---global-color-dark: #202020;
+  ---global-color-highlight: #e56d6d;
+  ---global-color-border: #e5e5e5;
+  background-color: #23262d;
+
+}
+
+/* General Navbar Styles */
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Top Navbar Specific Styles */
+.top-navbar {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  top: 0;
+  padding-top: 0;
+}
+
+/* Top Navbar border Styles */
+.top-navbar {
+  border-bottom: 0.1px solid #636569; /* Solid border line */
+  padding-bottom: 0; /* Optional: Adds some spacing */
+}
+
+/* Top Navbar Left Side hover Styles */
+.top-navbar .navbar-left .nav-link:hover {
+  color: var(---global-color-primary);
+}
+/* Top Navbar Left & right Side TextnStyles */
+.navbar-right .nav-link {
+  font-size: 12px;
+  font-weight: 400;
+  color: #b0b6bc;
+}
+.navbar-left .nav-link {
+  font-size: 15px;
+  font-weight: 400;
+  color: #b0b6bc;
+}
+
+/* Top Navbar Hover */
+.navbar-right .nav-link:hover {
+  cursor: text;
+  text-decoration: none !important;
+}
+
+/* Top Navbar Button Style */
+.cta {
+  color: white !important;
+  text-transform: uppercase;
+  background-color: var(---global-color-primary);
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  padding: 14px 32px;
+  font-weight: 800;
+}
+
+/* Top Navbar Button Hover */
+.cta:hover {
+  cursor: pointer !important;
+  text-decoration: none !important;
+}
+/* Top Navbar Button styling */
+.me-5 {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+
+/* main nav bar styling  */
+.main-navbar {
+  top: 70px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+/* main nav bar  link styling  */
+.main-navbar .nav-link {
+  color: white;
+  padding: 5px 22px;
+  margin: 10px;
+  text-decoration: none !important;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+}
+/* main nav bar  Active link styling  */
+.main-navbar .nav-link.active {
+  color: white;
+  position: relative; /* Ensure position relative for the active nav link */
+
+  /* padding: 15px 30px; */
+}
+/* main nav bar  hover  */
+.main-navbar .nav-link:hover {
+  color: var(---global-color-primary);
+}
+
+.main-navbar .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: var(---global-color-primary);
+  transition: all 0.5s ease;
+}
+.main-navbar .nav-link:hover::before {
+  width: 100%;
+}
+
+/* main nav bar icon  styling  */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-icons .icon-link {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+/* main nav bar icon  hover  */
+.navbar-icons .icon-link:hover {
+  color: var(---global-color-primary);
+}
+
+/* carousel  indicator styling  */
+.carousel {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel-inner img {
+  height: 120vh;
+  object-fit: cover;
+}
+
+/* Ensure carousel indicators are round */
+.carousel .carousel-indicators {
+  column-gap: 15px;
+}
+
+.carousel.slide .carousel-indicators button {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: none;
+
+  opacity: 1; /* The opacity property controls the transparency of an element, opacity: 1 means that the button (indicator) is fully opaque (not transparent).
+                    This is the default state, ensuring that the inactive indicator is fully visible. */
+  outline: 1px solid transparent; /*  This adds an outline around the button, but with the following properties: outline thickness as 1px ,
+                                        The outline color is set to transparent, which means that the outline will be invisible by default.  */
+  outline-offset: 3px; /* The outline-offset property shifts the outline away from the edge of the element.
+                            3px means that the outline will be offset by 3 pixels outside of the element (in this case, the circle). */
+}
+
+.carousel.slide .carousel-indicators .active {
+  outline-color: #ffffff;
+}
+
+/* transparent color to carousel items */
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.7;
+}
+
+.title_content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2; /* Make sure it's on top of the image */
+}
+
+.title_content h2 {
+  font-size: 68px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: -1px;
+  padding-bottom: 20px;
+}
+
+.title_content p {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: normal;
+  margin-top: 10px;
+  font-weight: 0;
+}
+
+.title_content a {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 0px 40px;
+  background-color: #ffffff;
+  color: #000 !important;
+  text-decoration: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: left;
+  font-weight: 800;
+}
+.title_content a:hover {
+  background-color: var(---global-color-primary);
+  color: #ffffff !important;
+}
+
+/* Carousel items */
+.carousel-item {
+  position: relative;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transitions */
+}
+
+
+.about_us
+{
+    color: #fff;
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Space out the columns evenly */
+    padding: 50px 15px; /* Add some padding for spacing */
+    gap: 20px; /* Add spacing between columns */
+
+}
+
+@property --width {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 15%;
+  }
+  
+  .counter {
+    position: relative;
+    padding: 30px 30px 25px 30px;
+    display: flex;
+    align-items: center;
+    border: 10px solid transparent;
+    border-image: linear-gradient(
+      90deg,
+      #393c42 var(--width),
+      transparent var(--width),
+      transparent calc(100% - var(--width)),
+      #393c42 calc(100% - var(--width))
+    );
+    border-image-slice: 1;
+    animation: animateBorderBack 500ms normal forwards;
+  }
+  
+  @keyframes animateBorder {
+    0% {
+      --width: 15%;
+    }
+    100% {
+      --width: 50%;
+    }
+  }
+  
+  @keyframes animateBorderBack {
+    0% {
+      --width: 50%;
+    }
+    100% {
+      --width: 15%;
+    }
+  }
+  
+  .counter:hover {
+    animation: animateBorder 500ms normal forwards;
+  }
+
+  .col-md-4.left {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    width: 380px;
+    margin-left: 50px;
+  }
+  .counter-number {
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #daa14c;
+    font-weight: 800;
+  }
+  
+  .counter-title {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .counter-title span {
+    display: block;
+    margin-left: 20px; /* Adjust alignment */
+  }
+  
+ 
+.counter-number
+{
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #daa14c;
+    font-weight: 800;
+}
+
+.counter-title {
+    display: inline-block;
+    text-align: left;
+    transition: opacity 2s ease-in-out, transform 1s ease-in-out;  /* Add a smooth fade-in and transformation */
+  }
+
+  .counter-number-wrapper {
+    margin-right: 20px;
+  }
+  
+  .counter-title-wrap {
+    text-align: right;
+  }
+  
+  .counter-title span {
+    display: block;
+    margin-left: 20px; /* Adjust as needed to ensure proper alignment */
+  }
+  .counter-number 
+  {
+    padding-left: 10px !important;
+   
+  }
+
+  .abt_info span{
+    color: var(---global-color-primary);
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+  }
+  .abt_info h2
+  {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -1px;
+  }
+  .col-md-4.left {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    width: 380px;
+  }
+.abt_desc
+{
+    color: #9b9b9b;
+    line-height: 24px;
+    font-size: 16px;
+}
+.abt_desc a
+{
+  display: inline-block;
+  margin-top: 30px;
+  padding: 0px 40px;
+  background-color: #30373e;
+  color: #ffffff !important;
+  text-decoration: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: left;
+  font-weight: 800;
+}
+.abt_desc a:hover{
+    background-color: var(---global-color-primary);
+    color: #ffffff !important;
+}
+
