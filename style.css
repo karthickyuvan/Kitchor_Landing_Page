@@ -422,9 +422,7 @@ body
 
 
 .container{
-
  max-width:  100%;
-
 }
 
 
@@ -441,6 +439,7 @@ body
   padding-left: 37px;
   padding-right: 44px;
 }
+
 .coll_title 
 {
   position: absolute;
@@ -467,6 +466,7 @@ body
   letter-spacing: 1.5px;
   font-weight: 500;
 }
+
 .coll_desc{
   position: absolute;
   z-index: 2;
@@ -499,11 +499,16 @@ body
   transition: transform 0.9s ease-in-out; /* Smooth zoom-in effect */
 }
 /* Zoom Effect on Hover (Image Only) */
-.image-wrapper:hover .img-fluid {
+.collections:hover .image-wrapper .img-fluid {
   transform: scale(1.05); /* Zoom-in effect for the image */
 }
 /* Show Description on Hover */
 .collections:hover .coll_desc {
   visibility: visible;
   opacity: 1; /* Fade-in effect */
+}
+
+.coll_link:hover
+{
+  color: var(---global-color-primary);
 }
