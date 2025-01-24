@@ -418,6 +418,8 @@ body
     color: #ffffff !important;
 }
 
+
+
 /* Section- Collections Styling  */
 
 
@@ -483,7 +485,6 @@ body
 
 }
 
-
 /* Wrapper for the Image */
 .image-wrapper {
   width: 100%;
@@ -498,17 +499,96 @@ body
   object-fit: cover; /* Ensures the image fits the container properly */
   transition: transform 0.9s ease-in-out; /* Smooth zoom-in effect */
 }
+
+
 /* Zoom Effect on Hover (Image Only) */
 .collections:hover .image-wrapper .img-fluid {
   transform: scale(1.05); /* Zoom-in effect for the image */
 }
+
 /* Show Description on Hover */
 .collections:hover .coll_desc {
   visibility: visible;
   opacity: 1; /* Fade-in effect */
 }
 
+/*  link color change on Hover */
+
 .coll_link:hover
 {
   color: var(---global-color-primary);
 }
+
+
+
+/* Section - WhyUs Styling  */
+
+.whyus{
+  background-image: url(./images/h2-bg01.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.why_us span
+{
+  color: var(---global-color-primary);
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+.why_us h2{
+
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 48px;
+  letter-spacing: -1px;
+  line-height: 52px;
+
+}
+
+
+.icon-box{
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.icon-box i {
+  display: inline-block;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  font-size: 40px; /* Adjust size of icon */
+  width: 100px; /* Adjust width of the circle */
+  height: 100px; /* Adjust height of the circle */
+  border-radius: 50%; /* Make it circular */
+  background-color: #32343b; /* Background color of the circle */
+  color: #ffffff; /* Icon color */
+  line-height: 100px; /* Align icon vertically within the circle */
+  margin-bottom: 10px; /* Space between the icon and text */
+}
+
+
+.desc
+{
+  color: #9b9b9b;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.service-title
+{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+ .icon-box:hover i {
+  background-color: var(---global-color-primary) ;/* Change background color on hover */
+  color: #ffffff; /* Change icon color on hover */
+  transform: scale(1.1); /* Enlarge icon on hover */
+}
+
