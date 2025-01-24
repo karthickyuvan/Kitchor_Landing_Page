@@ -1,3 +1,6 @@
+
+// About us Number Animation 
+
 document.addEventListener("DOMContentLoaded", function() {
     const counter = document.getElementById("counter-number");
     const targetValue = 25;

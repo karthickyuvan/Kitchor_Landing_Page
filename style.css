@@ -1,3 +1,5 @@
+/* Reset all  */
+
 * {
   padding: 0;
   margin: 0;
@@ -5,6 +7,7 @@
   font-family: "Plus Jakarta Sans", sans-serif;
 
 }
+
 body
 {
     background-color: #23262d;
@@ -22,6 +25,9 @@ body
   background-color: #23262d;
 
 }
+
+/* --------------NAV BAR Styling --------------------- */
+
 
 /* General Navbar Styles */
 
@@ -48,12 +54,15 @@ body
 .top-navbar .navbar-left .nav-link:hover {
   color: var(---global-color-primary);
 }
+
+
 /* Top Navbar Left & right Side TextnStyles */
 .navbar-right .nav-link {
   font-size: 12px;
   font-weight: 400;
   color: #b0b6bc;
 }
+
 .navbar-left .nav-link {
   font-size: 15px;
   font-weight: 400;
@@ -152,10 +161,13 @@ body
   color: var(---global-color-primary);
 }
 
+/*---------------------Header Styling----------------------------------------- */
+
 /* carousel  indicator styling  */
 .carousel {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .carousel-inner img {
   height: 120vh;
   object-fit: cover;
@@ -166,13 +178,13 @@ body
   column-gap: 15px;
 }
 
+/* carousel indicators Styling */
 .carousel.slide .carousel-indicators button {
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: #ffffff;
   border: none;
-
   opacity: 1; /* The opacity property controls the transparency of an element, opacity: 1 means that the button (indicator) is fully opaque (not transparent).
                     This is the default state, ensuring that the inactive indicator is fully visible. */
   outline: 1px solid transparent; /*  This adds an outline around the button, but with the following properties: outline thickness as 1px ,
@@ -198,6 +210,8 @@ body
   background: #000;
   opacity: 0.7;
 }
+
+/* carousel Title Content Styling */
 
 .title_content {
   position: absolute;
@@ -248,12 +262,15 @@ body
   color: #ffffff !important;
 }
 
+
+
 /* Carousel items */
 .carousel-item {
   position: relative;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transitions */
 }
 
+/* Section- About Us Styling  */
 
 .about_us
 {
@@ -265,6 +282,8 @@ body
     gap: 20px; /* Add spacing between columns */
 
 }
+
+/* About-us First Column Styling  */
 
 @property --width {
     syntax: "<percentage>";
@@ -288,7 +307,11 @@ body
     border-image-slice: 1;
     animation: animateBorderBack 500ms normal forwards;
   }
-  
+
+
+  /* About-us First Column Animation */
+
+
   @keyframes animateBorder {
     0% {
       --width: 15%;
@@ -296,6 +319,7 @@ body
     100% {
       --width: 50%;
     }
+
   }
   
   @keyframes animateBorderBack {
@@ -314,38 +338,20 @@ body
   .col-md-4.left {
     display: flex;
     align-items: center;
-    padding-left: 0px;
+    padding-left: 15px;
     width: 380px;
     margin-left: 50px;
   }
+
   .counter-number {
     font-size: 80px;
     line-height: 80px;
     text-align: center;
     color: #daa14c;
     font-weight: 800;
+    padding-left: 10px !important;
   }
   
-  .counter-title {
-    display: inline-block;
-    text-align: left;
-  }
-  
-  .counter-title span {
-    display: block;
-    margin-left: 20px; /* Adjust alignment */
-  }
-  
- 
-.counter-number
-{
-    font-size: 80px;
-    line-height: 80px;
-    text-align: center;
-    color: #daa14c;
-    font-weight: 800;
-}
-
 .counter-title {
     display: inline-block;
     text-align: left;
@@ -364,11 +370,8 @@ body
     display: block;
     margin-left: 20px; /* Adjust as needed to ensure proper alignment */
   }
-  .counter-number 
-  {
-    padding-left: 10px !important;
-   
-  }
+
+  /* About-us Second Column Styling */
 
   .abt_info span{
     color: var(---global-color-primary);
@@ -384,18 +387,16 @@ body
     line-height: 52px;
     letter-spacing: -1px;
   }
-  .col-md-4.left {
-    display: flex;
-    align-items: center;
-    padding-left: 0;
-    width: 380px;
-  }
+  
+    /* About-us Third Column Styling */
+
 .abt_desc
 {
     color: #9b9b9b;
     line-height: 24px;
     font-size: 16px;
 }
+
 .abt_desc a
 {
   display: inline-block;
@@ -417,3 +418,92 @@ body
     color: #ffffff !important;
 }
 
+/* Section- Collections Styling  */
+
+
+.container{
+
+ max-width:  100%;
+
+}
+
+
+/* Collections Container */
+.collections {
+  position: relative; /* Make this the relative container for absolute positioning */
+  overflow: hidden; /* Prevent image overflow */
+}
+
+.coll-details {
+  color: #fff; /* White text for contrast */
+  padding-top: 44px;
+  padding-bottom: 33px;
+  padding-left: 37px;
+  padding-right: 44px;
+}
+.coll_title 
+{
+  position: absolute;
+  color: #e5e5e5;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  padding: 44px 44px 33px 37px;
+  font-size: 24px;
+  line-height: 28px;
+ 
+}
+
+.coll_link
+{
+  position: absolute;
+  z-index: 2;
+  top: 500px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+.coll_desc{
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(108, 102, 102, 0.2);
+  top: 400px;
+  color: rgb(255, 254, 254);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 22px;
+ visibility: hidden;
+ opacity: 0;
+ transition: visibility 0s, opacity 0.5s ease-in-out; /* Smooth fade-in effect */
+
+}
+
+
+/* Wrapper for the Image */
+.image-wrapper {
+  width: 100%;
+  height: 560px;
+  position: relative;
+  overflow: hidden; /* Ensures zoomed image does not overflow */
+}
+/* Default Image Styling */
+.image-wrapper .img-fluid {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; /* Ensures the image fits the container properly */
+  transition: transform 0.9s ease-in-out; /* Smooth zoom-in effect */
+}
+/* Zoom Effect on Hover (Image Only) */
+.image-wrapper:hover .img-fluid {
+  transform: scale(1.05); /* Zoom-in effect for the image */
+}
+/* Show Description on Hover */
+.collections:hover .coll_desc {
+  visibility: visible;
+  opacity: 1; /* Fade-in effect */
+}
