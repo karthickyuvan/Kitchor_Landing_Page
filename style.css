@@ -592,3 +592,98 @@ body
   transform: scale(1.1); /* Enlarge icon on hover */
 }
 
+/* Promo Video Section */
+.promo-video-section {
+  background-image: url('./images/About_BG_02.jpg'); /* Add your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  margin-left: 30px;
+  margin-right:30px ;
+  color: #fff; /* Ensure text is visible on the background */
+  height: 100vh;
+  background-size: auto; /* Keeps the original size of the image */
+}
+.content-wrapper
+{
+  position: absolute;
+  margin-top: -200px; /* Aligns with the video on the right */
+  
+}
+.heading-title
+{
+  position: absolute;
+  padding-left: 30px;
+  color: var(---global-color-primary);
+  top: 40px;
+  left: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 12px;
+}
+.subheading-title
+{
+  font-size: 48px; /* Adjust font size */
+  font-weight: 600;
+  line-height: 52px; /* Increase line height for better readability */
+  max-width: 500px; /* Limit the width for wrapping */
+  margin: 20px 0; /* Add top and bottom margin for spacing */
+  color: white; /* Ensure text visibility */
+  top: 120px;
+  left: 35px;
+  position: relative;
+  display: inline;
+  letter-spacing: -1px;
+}
+
+.text-content
+{
+  position: relative;
+  top: 130px;
+  left: 40px;
+
+}
+
+.content-wrapper a
+{
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(---global-color-border);
+  color: black;
+  border-radius: 30px;
+  padding: 14px 32px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  max-width: 190px;
+  top: 350px;
+  left: 10px;
+  position: absolute;
+  margin-left: 30px;
+}
+
+/* Video Icon */
+.video-icon {
+  position: absolute;
+  top: 60%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  transition: transform 0.3s ease ;
+}
+
+.right_img
+{
+ 
+ padding-top:70px ;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
