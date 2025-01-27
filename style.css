@@ -176,6 +176,7 @@ body
 /* Ensure carousel indicators are round */
 .carousel .carousel-indicators {
   column-gap: 15px;
+  padding: 10px 0;
 }
 
 /* carousel indicators Styling */
@@ -183,6 +184,7 @@ body
   width: 6px;
   height: 6px;
   border-radius: 50%;
+  overflow-x:visible;
   background-color: #ffffff;
   border: none;
   opacity: 1; /* The opacity property controls the transparency of an element, opacity: 1 means that the button (indicator) is fully opaque (not transparent).
@@ -609,6 +611,8 @@ body
   overflow: hidden; /* Prevents overflow */
   background-size: auto; /* Keeps the original size of the image */
 }
+
+
 .content-wrapper {
   position: relative; /* Default relative position for better control */
   padding: 20px; /* Adds spacing around the content */
@@ -630,8 +634,6 @@ body
   margin: 20px 0; /* Add spacing */
 
 }
-
-
 
 .text-content {
   margin-top: 20px;
@@ -672,3 +674,142 @@ body
   color: white;
 }
 
+hr {
+  border: none;
+  border-top: 0.01px solid #ccc; /* Customize thickness and color */
+  margin: 0 0; /* Adjust spacing */
+}
+
+
+/* Our Project Styling */
+
+
+.ourproject .container {
+  max-width: 1350px; /* Maximum width for the content */
+  margin: 0 auto; /* Center the container */
+  padding: 0 10px; /* Add padding to avoid overflow */
+  box-sizing: border-box;
+}
+.ourproject .container .row {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of columns */
+  gap: 10px; /* Uniform spacing between columns */
+  margin: 0; /* Remove row-level margins */
+  justify-content: space-between; /* Spread columns evenly */
+
+}
+.our_projects
+{
+  color: #ffffff;
+
+}
+.our_projects span
+{
+  color: var(---global-color-primary);
+  text-transform: uppercase;
+  padding-bottom: 30px !important;
+  letter-spacing: 1.5px;
+  font-size: 16px;
+}
+.our_projects h2{
+  padding: 30px 0;
+line-height: 52px;
+font-size: 48px;
+}
+.our_projects p{
+
+  color: #bab6b6;
+  padding: 30px 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.our_projects_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 32%; /* Four equal columns without using calc() */
+  max-width: 500px; /* Limit the width of each column */
+  margin: 5px; /* Reduced spacing between rows and columns */
+  padding-bottom: 25px;
+}
+
+.image-content {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Maintain consistent max width */
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.image-content img {
+  display: block;
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  overflow: hidden;
+}
+
+.image-content:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Project description styling */
+.project-desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Adjust the width */
+  height: 110%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 20px;
+  color: #fff; /* White text */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth appearance */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content:hover .project-desc {
+  opacity: 1; /* Visible on hover */
+}
+
+.project-desc h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px; 
+}
+.project-desc .links {
+  display: flex; /* Make the links appear in a row */
+  justify-content: center; /* Center the links horizontally */
+}
+.project-desc a {
+  color: #ffffff; /* Highlighted color for links */
+  text-decoration: none !important;
+  margin: 0 10px; /* Space between the links */
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.project-desc span
+{
+  font-size: 12px;
+  line-height: 18px;
+}
+.project-desc h3:hover
+{
+  color: var(---global-color-primary);
+}
+.project-desc a:hover {
+  color: var(---global-color-primary);
+}
+
+.project-desc span {
+  color: #fff; /* Separator styling */
+}
