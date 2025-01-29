@@ -777,6 +777,7 @@ font-size: 48px;
 
 .image-content:hover .project-desc {
   opacity: 1; /* Visible on hover */
+ 
 }
 
 .project-desc h3 {
@@ -812,4 +813,89 @@ font-size: 48px;
 
 .project-desc span {
   color: #fff; /* Separator styling */
+}
+
+
+/* Design Process Section  */
+
+.dsp
+{
+  background-color: #31343b;
+  margin: 70px 32px;
+  padding-left: 0;
+  
+}
+
+.common-background {
+  background-image: url('./images/h2-bg04.png'); /* Replace with your image URL */
+  background-position: right 5px bottom -20px ; /* Adjust background position (right 20px, bottom 20px) */
+  background-repeat: no-repeat;
+  background-size: auto; /* Adjust as needed */
+  padding: 90px; /* Add padding for spacing */
+  position: relative; /* Required for pseudo-element */
+  overflow: hidden; /* Ensure the image doesn't overflow the container */
+  
+
+}
+/* Add a pseudo-element to create a top margin effect for the background image */
+    .common-background::before {
+      content: '';
+      display: block;
+      width: 100%;
+    }
+
+.image-div {
+  position: relative;
+}
+.image-div img {
+  width: 100%;
+  margin-bottom: 100px; /* Bottom margin for the image */
+  padding-left: 0;
+}
+.common-background .col-md-6 
+{
+  padding-left: 0;
+}
+.dsp-left
+{
+  padding-left: 80px !important;
+  color: #ffffff;
+}
+.logo {
+  width: 100px; /* Adjust logo size */
+  height: auto;
+  margin-bottom: 20px; /* Space between logo and h3 */
+  margin-top: 70px;
+ 
+}
+.dsp-left h2
+{
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.6px;
+  margin-top: 30px;
+  margin-bottom: 20px; /* Space between logo and h3 */
+
+}
+.dsp-left p{
+  color: #bab6b6;
+  line-height: 24px;
+  padding-top: 20px;
+  font-size: 16px;
+}
+.dsp-left a {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 0px 40px;
+  background-color: var(---global-color-primary);
+  color: #ffffff !important;
+  text-decoration: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: left;
+  font-weight: 800;
 }
