@@ -879,7 +879,7 @@ font-size: 48px;
   letter-spacing: -0.6px;
   margin-top: 30px;
   margin-bottom: 20px; /* Space between logo and h3 */
-
+overflow-y: hidden;
 }
 .dsp-left p{
   color: #bab6b6;
@@ -904,13 +904,13 @@ font-size: 48px;
   font-weight: 800;
 }
 
-
+/* Our Clients Section */
 /* General Styles */
 .our-clients{
   background-image: url(./images/h2-bg02.png);
   background-position: center bottom -60px;
   background-repeat: no-repeat;
-  
+
 }
 
 
@@ -979,3 +979,97 @@ font-size: 48px;
 }
 
 
+/* ----------Method Section-------------- */
+/* Container styling */
+
+.method
+{
+  background-color: #31343b;
+  margin: 0px 32px ;
+  padding-left: 0;
+  overflow-y: hidden;
+ 
+}
+.method-container {
+  background-image: url('./images/h2-bg03.png'); /* Replace with your image */
+  background-size: 35%; /* Ensures the image covers the entire div */
+  position: relative; /* Allows absolute positioning inside */
+  overflow: hidden; /* Ensures child elements don't overflow */
+  background-repeat: no-repeat;
+  background-position: left;
+ 
+}
+/* Add a pseudo-element to create a top margin effect for the background image */
+.method-container::before {
+  content: '';
+  display: block;
+  width: 100%;
+}
+
+/* Left Section */
+.method-left {
+  padding: 90px; /* Adds space inside the container */
+}
+
+.method-left span {
+  font-size: 14px; /* Adjust span size */
+  line-height: 20px; 
+ text-transform: uppercase; /* Converts text to uppercase */
+  letter-spacing: 3.4px; /* Adds space between letters */
+  color: var(---global-color-primary);
+}
+
+.method-left h2 {
+  font-size: 48px;
+  margin-top: 10px;
+  line-height: 52px; 
+  letter-spacing: -1px; /* Adds space between letters */
+  color: white; /* Text color */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow-y: hidden;
+}
+
+.method-left p {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 24px; 
+  letter-spacing: normal; /* Adds space between letters */
+   color: #9b9b9b;
+   padding-top: 10px;
+}
+.method-left a
+{
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 0px 40px;
+  background-color: var(---global-color-primary);
+  color: #ffffff !important;
+  text-decoration: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: left;
+  font-weight: 800;
+}
+
+/* Right Section - Image */
+/* Right Section - Image */
+.method-right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  margin-top: -97px;
+}
+
+.method-right img {
+  width: 100%; /* Takes full width of the right section */
+  max-width: none; /* Allows it to expand beyond default limits */
+  position: absolute; /* Keeps it inside the parent div */
+  object-fit: cover; /* Ensures the image fills the div without distortion */
+}
