@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Plus Jakarta Sans", sans-serif;
   overflow-x: hidden;
+ 
 }
 
 body
@@ -388,6 +389,8 @@ body
     font-weight: 700;
     line-height: 52px;
     letter-spacing: -1px;
+    overflow-y: hidden;
+    padding-bottom: 20px;
   }
   
     /* About-us Third Column Styling */
@@ -549,7 +552,7 @@ body
   font-size: 48px;
   letter-spacing: -1px;
   line-height: 52px;
-
+overflow-y: hidden;
 }
 
 
@@ -823,7 +826,7 @@ font-size: 48px;
   background-color: #31343b;
   margin: 70px 32px;
   padding-left: 0;
-  
+  overflow-y: hidden;
 }
 
 .common-background {
@@ -860,6 +863,7 @@ font-size: 48px;
 {
   padding-left: 80px !important;
   color: #ffffff;
+  
 }
 .logo {
   width: 100px; /* Adjust logo size */
@@ -899,3 +903,79 @@ font-size: 48px;
   text-align: left;
   font-weight: 800;
 }
+
+
+/* General Styles */
+.our-clients{
+  background-image: url(./images/h2-bg02.png);
+  background-position: center bottom -60px;
+  background-repeat: no-repeat;
+  
+}
+
+
+.section-title span {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(---global-color-primary);
+}
+
+.section-title h2 {
+  font-size: 48px;
+  color: #ffffff; /* White title color */
+  margin-top: 10px;
+  line-height: 1.3;
+}
+
+.testimonal-content {
+  background-color: #30373e; /* Dark background for testimonial content */
+  margin: 50px;
+  margin-left: 0;
+  padding: 50px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: relative;
+}
+
+.testimonal-content i {
+  font-size: 50px;
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  color: var(---global-color-primary);
+}
+.testimonal-content p {
+  font-size: 18px;
+  color: #ffffff; /* White text color */
+  line-height: 28px;
+  margin-top: 70px; /* Adjusted margin for spacing */
+}
+
+.testimonal_ {
+  display: flex;
+  align-items: center;
+  margin-top: 25px; /* Adjusted margin for spacing */
+}
+.testimonal_ img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Circular image */
+  margin-right: 15px;
+}
+.author-info {
+  display: flex;
+  flex-direction: column; /* Stack h4 and span vertically */
+}
+.testimonal_ h4 {
+  font-size: 20px;
+  color: #ffffff; /* White author name color */
+  margin: 0;
+}
+.testimonal_ span {
+  font-size: 14px;
+  color: #cccccc; /* Light gray designation color */
+  margin-top: 5px; /* Add space between h4 and span */
+}
+
+
