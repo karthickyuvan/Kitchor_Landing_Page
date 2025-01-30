@@ -1073,3 +1073,57 @@ overflow-y: hidden;
   position: absolute; /* Keeps it inside the parent div */
   object-fit: cover; /* Ensures the image fills the div without distortion */
 }
+
+
+/* ----------Completed Projects Animation-------------- */
+
+.pca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pca .container {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  
+}
+.pca .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+}
+.finished-works {
+color: var(---global-color-primary) ;  
+font-size: 48px;
+  line-height: 52px;
+  font-weight: 800;
+  text-align: left;
+  overflow-y: hidden;
+  transition: all 0.3s ease; /* Smooth transition effect */
+
+}
+
+
+.finished-works-name {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.6px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.pca-space {
+  flex: 1 1 calc(25% - 20px);  /* Flexbox to distribute evenly */
+  padding: 20px;  /* Add padding around the content */
+  margin: 60px 10px; /* Optional: Add some margin to space out elements */
+}
+.pca-space:not(:last-child) {
+  border-right: 1px solid #FFFFFF3D; /* Right border for all except the last */
+}
+
+.pca .pt-5
+{
+  padding-top: 70px !important;
+}
