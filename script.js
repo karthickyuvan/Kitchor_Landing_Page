@@ -69,3 +69,39 @@ const totalDuration = 2000;
 }
 // Run the animation when the page loads
 window.addEventListener('load', animateNumbers);
+
+//-----------------------------------------------------------------Card Styling Effect------------------------------------------------------
+// Our blog card scroll
+let cardWrapper = document.querySelector('.blog-container');
+let cards = Array.from(cardWrapper.children);  // Convert the node list into an array
+let cardCount = cards.length;
+
+let cardShiftInterval;
+
+// Function to shift the cards
+function shiftCards() {
+  // Move the first card to the end
+  let firstCard = cards.shift(); // Get the first card
+  cardWrapper.appendChild(firstCard); // Append it to the end of the container
+  cards.push(firstCard); // Update the cards array
+}
+
+// Start the interval to shift cards every 2 seconds
+function startCardShift() {
+  cardShiftInterval = setInterval(shiftCards, 2000); // Shift cards every 2 seconds
+}
+
+// Stop the interval to stop shifting cards
+function stopCardShift() {
+  clearInterval(cardShiftInterval);
+}
+
+// Start shifting cards when the page loads
+startCardShift();
+
+// Stop shifting cards on hover
+cardWrapper.addEventListener('mouseover', stopCardShift);
+
+// Start shifting cards again when mouse leaves the container
+cardWrapper.addEventListener('mouseout', startCardShift);
+

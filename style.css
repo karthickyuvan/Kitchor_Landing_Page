@@ -150,24 +150,22 @@ body
   gap: 15px;
 }
 
-.navbar-icons .icon-link {
+.navbar-icons .icon-link i{
   color: rgb(255, 255, 255);
   font-size: 20px;
   text-decoration: none;
-  font-weight: 800;
+  width:auto;
+  height: auto;
 }
 
 /* main nav bar icon  hover  */
-.navbar-icons .icon-link:hover {
+.navbar-icons .icon-link i:hover {
   color: var(---global-color-primary);
 }
 
 /*---------------------Header Styling----------------------------------------- */
 
 /* carousel  indicator styling  */
-.carousel {
-  background-color: rgba(0, 0, 0, 0.5);
-}
 
 .carousel-inner img {
   height: 120vh;
@@ -202,7 +200,7 @@ body
 
 /* transparent color to carousel items */
 
-.carousel-item::before {
+.dark-bg::before {
   content: "";
   display: block;
   position: absolute;
@@ -268,7 +266,7 @@ body
 
 
 /* Carousel items */
-.carousel-item {
+.dark-bg {
   position: relative;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transitions */
 }
@@ -1126,4 +1124,128 @@ font-size: 48px;
 .pca .pt-5
 {
   padding-top: 70px !important;
+}
+
+
+/*----------------our Blog Section------------------*/
+
+
+/* General styling for the blog container */
+.blog-container {
+  display: flex; /* This will make the cards appear in a row */
+  overflow: hidden; /* Hide the overflowed part during the transition */
+  gap: 20px; /* Space between cards */
+  transition: transform 0.5s ease; /* Smooth transition for sliding */
+  padding-top: 50px;
+}
+
+/* Individual card styling */
+.card-wrapper {
+  flex: 0 0 auto; /* Prevent the cards from resizing */
+  width: 33.33%; /* Ensure each card takes up one-third of the row */
+}
+
+/* Card styling */
+.card {
+  border: none;
+   width: 100%;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+}
+
+.card-info
+{
+  color: #ffffff;
+}
+
+.card-info .admin:hover,
+.card-body a:hover {
+  color: var(---global-color-primary);
+}
+
+.card-info .admin {
+  cursor: pointer;
+}
+
+.card img {
+ 
+  height: 250px;
+  object-fit: cover;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card-body { 
+  padding-left: 0px;
+  padding-top: 20px;
+}
+
+ .card-title {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.7px;
+  overflow-y: hidden;
+  color: #ffffff;
+}
+.card-title:hover
+{
+  color: var(---global-color-primary);
+  cursor: pointer;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #938f8f;
+  margin-bottom: 15px;
+}
+
+
+.card-info .dot {
+  padding-right: 5px;
+  text-align: center;
+  color: #535353;
+}
+
+.card-info .by {
+  padding-right: 5px;
+  color: #535353;
+}
+.card-info .date {
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  padding-right: 10px;
+}
+.card-info a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.card-info a:hover {
+  color: var(---global-color-primary);
+}
+
+.card-info .calendar_icon {
+  color: var(---global-color-primary);
+  font-size: 16px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.card-body a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.read-more
+{
+  border: 2px solid var(---global-color-primary);
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
 }
