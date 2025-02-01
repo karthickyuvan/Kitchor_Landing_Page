@@ -1,676 +1,605 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home 2 - Kitchor</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- ---------------------------------- First Navbar (Transparent with buttons)  ------------------------------------>
 
-    <nav class="navbar navbar-expand-lg top-navbar">
-      <div
-        class="container-fluid d-flex justify-content-between align-items-center"
-      >
-        <!-- Left Section -->
-        <div class="navbar-left">
-          <ul class="navbar-nav d-flex flex-row align-items-center">
-            <li class="nav-item">
-              <a href="#" class="nav-link me-1 ms-5">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link me-1">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link me-1">
-                <i class="fab fa-pinterest"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link me-1">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home 2 - Kitchor</title>
+  <link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
 
-        <!-- Right Section -->
+<body>
+  <!-- ---------------------------------- First Navbar (Transparent with buttons)  ------------------------------------>
 
-        <div class="navbar-right">
-          <ul class="navbar-nav d-flex flex-row align-items-center">
-            <li class="nav-item">
-              <a href="#" class="nav-link me-3">
-                <i class="fas fa-envelope me-2"></i>Email: info@support.com
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link me-3">
-                <i class="fa-solid fa-phone-volume me-2"></i>Call us: +844 1255
-                668 333
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link me-5 cta">
-                Book appoinment <i class="fa-solid fa-arrow-right ms-1"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- ---------------------------------- Second  Navbar (Transparent with icons )  ------------------------------------>
-
-    <nav class="navbar navbar-expand-lg main-navbar">
-      <div class="container-fluid">
-        <!-- Left Section -->
-
-        <a class="navbar-brand ms-5" href="">
-          <img src="./images/logo-2.svg" alt="logo" />
-        </a>
-
-        <!-- Navbar Toggle for Mobile -->
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- ---------------------------------- Navbar Links and Icons ---------------------------------- -->
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <!-- Menu Items -->
-
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Virtual Tours</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-
-          <!-- Navbar Icons -->
-
-          <div class="navbar-icons d-flex align-items-center ms-3 me-5">
-            <a href="#" class="icon-link me-3 ">
-              <i class="bi bi-search"></i>
+  <nav class="navbar navbar-expand-lg top-navbar">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <!-- Left Section -->
+      <div class="navbar-left">
+        <ul class="navbar-nav d-flex flex-row align-items-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link me-1 ms-5">
+              <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="#" class="icon-link me-3">
-              <i class="bi bi-person"></i>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link me-1">
+              <i class="fab fa-twitter"></i>
             </a>
-            <a href="#" class="icon-link me-3">
-              <i class="bi bi-basket"></i>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link me-1">
+              <i class="fab fa-pinterest"></i>
             </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!--  ----------------------------------Carousel Slider  ------------------------------------>
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <!-- Indicators -->
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="3"
-          aria-label="Slide 4"
-        ></button>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link me-1">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
       </div>
 
-      <!-- Carousel Items -->
-      <div class="carousel-inner">
-        <div class="carousel-item active dark-bg">
-          <img
-            src="./images/rev_home2_1.jpg"
-            class="d-block w-100"
-            alt="image-1"
-          />
-          <div class="title_content">
-            <h2>
-              Design Your Kitchen <br />
-              With the Expert
-            </h2>
-            <p>$150 Deposit <br />3D Design & Measurement</p>
-            <a>Visit Show Room <i class="fa-solid fa-arrow-right ms-1"></i></a>
-          </div>
-        </div>
-        <div class="carousel-item dark-bg">
-          <img
-            src="./images/rev_home2_2.jpg"
-            class="d-block w-100"
-            alt="image-2"
-          />
-          <div class="title_content">
-            <h2>
-              Make a kitchen part of <br />
-              the family
-            </h2>
-            <p>
-              Kitchens should be designed around what's truly <br />
-              important,family,food and life
-            </p>
-            <a>Visit Show Room <i class="fa-solid fa-arrow-right ms-1"></i></a>
-          </div>
-        </div>
-        <div class="carousel-item dark-bg">
-          <img
-            src="./images/rev_home6_1.jpg"
-            class="d-block w-100"
-            alt="image-3"
-          />
-          <div class="title_content">
-            <h2>
-              Make a kitargu kitchen <br />
-              part of the family
-            </h2>
-            <p>
-              Kitchens should be designed around what's truely <br />
-              important ,family food and life
-            </p>
-            <a>Visit Show Room <i class="fa-solid fa-arrow-right ms-1"></i></a>
-          </div>
-        </div>
-        <div class="carousel-item dark-bg">
-          <img
-            src="./images/rev_home3_1.jpg"
-            class="d-block w-100"
-            alt="image-4"
-          />
-          <div class="title_content">
-            <h2>
-              Design <br />
-              Build Kitchen
-            </h2>
-            <p>
-              Kitchens should be designed around what's truely <br />important
-              ,family food and life
-            </p>
-            <a>Visit Show Room <i class="fa-solid fa-arrow-right ms-1"></i></a>
-          </div>
+      <!-- Right Section -->
+
+      <div class="navbar-right">
+        <ul class="navbar-nav d-flex flex-row align-items-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link me-3 cta-email">
+              <i class="fas fa-envelope me-2"></i>Email: info@support.com
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link me-3">
+              <i class="fa-solid fa-phone-volume me-2"></i>Call us: +844 1255
+              668 333
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link me-5 cta">
+              Book appoinment <i class="fa-solid fa-arrow-right ms-1"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ---------------------------------- Second  Navbar (Transparent with icons )  ------------------------------------>
+
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container-fluid">
+      <!-- Left Section -->
+
+      <a class="navbar-brand ms-5" href="">
+        <img src="./images/logo-2.svg" alt="logo" />
+      </a>
+
+      <!-- Navbar Toggle for Mobile -->
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- ---------------------------------- Navbar Links and Icons ---------------------------------- -->
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Menu Items -->
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Virtual Tours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Navbar Icons -->
+
+        <div class="navbar-icons d-flex align-items-center ms-3 me-5">
+          <a href="#" class="icon-link me-3 ">
+            <i class="bi bi-search"></i>
+          </a>
+          <a href="#" class="icon-link me-3">
+            <i class="bi bi-person"></i>
+          </a>
+          <a href="#" class="icon-link me-3">
+            <i class="bi bi-basket"></i>
+          </a>
         </div>
       </div>
     </div>
+  </nav>
+  <!--  ----------------------------------Carousel Slider  ------------------------------------>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
 
-    <!-- ---------------------------------- Second  Section   ------------------------------------>
+    <!-- Carousel Items -->
+    <div class="carousel-inner">
+      <div class="carousel-item active dark-bg">
+        <img src="./images/rev_home2_1.jpg" class="d-block w-100" alt="image-1" />
+        <div class="title_content">
+          <h2>
+            Design Your Kitchen <br />
+            With the Expert
+          </h2>
+          <p>$150 Deposit <br />3D Design & Measurement</p>
+          <a>Visit Show Room <i class="fa-solid fa-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+      <div class="carousel-item dark-bg">
+        <img src="./images/rev_home2_2.jpg" class="d-block w-100" alt="image-2" />
+        <div class="title_content">
+          <h2>
+            Make a kitchen part of <br />
+            the family
+          </h2>
+          <p>
+            Kitchens should be designed around what's truly <br />
+            important,family,food and life
+          </p>
+          <a>Visit Show Room <i class="fa-solid fa-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+      <div class="carousel-item dark-bg">
+        <img src="./images/rev_home6_1.jpg" class="d-block w-100" alt="image-3" />
+        <div class="title_content">
+          <h2>
+            Make a kitargu kitchen <br />
+            part of the family
+          </h2>
+          <p>
+            Kitchens should be designed around what's truely <br />
+            important ,family food and life
+          </p>
+          <a>Visit Show Room <i class="fa-solid fa-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+      <div class="carousel-item dark-bg">
+        <img src="./images/rev_home3_1.jpg" class="d-block w-100" alt="image-4" />
+        <div class="title_content">
+          <h2>
+            Design <br />
+            Build Kitchen
+          </h2>
+          <p>
+            Kitchens should be designed around what's truely <br />important
+            ,family food and life
+          </p>
+          <a>Visit Show Room <i class="fa-solid fa-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <section class="About">
-      <div class="container-fluid about_us py-5 ms-5 mt-5 mb-5">
-        <div class="row">
-          <!-- Left: Counter Section -->
-          <div class="col-md-4 left d-flex align-items-center">
-            <div class="counter d-flex align-items-center">
-              <div class="counter-number-wrapper">
-                <span class="counter-number ps-5" id="counter-number">25</span>
+  <!-- ---------------------------------- Second  Section   ------------------------------------>
+
+  <section class="About">
+    <div class="container-fluid about_us py-5 ms-5 mt-5 mb-5">
+      <div class="row">
+        <!-- Left: Counter Section -->
+        <div class="col-md-4 left d-flex align-items-center">
+          <div class="counter d-flex align-items-center">
+            <div class="counter-number-wrapper">
+              <span class="counter-number ps-5" id="counter-number">25</span>
+            </div>
+            <div class="counter-title-wrap text-end pe-0">
+              <div class="counter-title">
+                <span>Years</span>
+                <span>experience</span>
+                <span>working</span>
               </div>
-              <div class="counter-title-wrap text-end pe-0">
-                <div class="counter-title">
-                  <span>Years</span>
-                  <span>experience</span>
-                  <span>working</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle: About Us Section -->
+        <div class="col-md-4 abt_info d-flex align-items-center ps-5">
+          <div>
+            <span class="mt-0">About Us</span>
+            <h2 class="mt-5">Creative solutions by professional designers</h2>
+          </div>
+        </div>
+
+        <!-- Right: Description and Button Section -->
+        <div class="col-md-4 text-center text-md-start abt_desc ps-5">
+          <p>
+            Your kitchen is an expression of who you are,<br />
+            and its design should match your lifestyle. <br />
+            Whether you have traditional tastes or desire a <br />
+            modern feel, we can design your dream kitchen <br />
+            to suit any purpose.
+          </p>
+          <a href="https://demo2.themelexus.com/kitchor/about-us-01/">
+            Continue Reading <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------------------------- Third Section   ------------------------------------>
+  <section class="collection whyus d-flex py-5 px-5">
+    <div class="container-fluid container">
+      <div class="row">
+        <div class="col-md-3 collections">
+          <div class="image-wrapper">
+            <img src="./images/h2-banner1.jpg" alt="Banner-1" class="img-fluid" />
+          </div>
+          <div class="coll-details">
+            <h3 class="coll_title">
+              Country <br />
+              Collection
+            </h3>
+            <p class="coll_desc">
+              We will measure your kitchen, <br />
+              ask you questions and start the <br />
+              actual design process with you.
+            </p>
+            <a class="coll_link" href="#">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-3 collections">
+          <div class="image-wrapper">
+            <img src="./images/h2-banner2.jpg" alt="Banner-1" class="img-fluid" />
+          </div>
+          <div class="coll-details">
+            <h3 class="coll_title">
+              Concord <br />
+              Collection
+            </h3>
+            <p class="coll_desc">
+              We will measure your kitchen, <br />
+              ask you questions and start the <br />
+              actual design process with you.
+            </p>
+            <a class="coll_link" href="#">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-3 collections">
+          <div class="image-wrapper">
+            <img src="./images/h2-banner3.jpg" alt="Banner-1" class="img-fluid" />
+          </div>
+          <div class="coll-details">
+            <h3 class="coll_title">
+              Classic <br />
+              Collection
+            </h3>
+            <p class="coll_desc">
+              We will measure your kitchen, <br />
+              ask you questions and start the <br />
+              actual design process with you.
+            </p>
+            <a class="coll_link" href="#">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-3 collections">
+          <div class="image-wrapper">
+            <img src="./images/h2-banner4.jpg" alt="Banner-1" class="img-fluid" />
+          </div>
+          <div class="coll-details">
+            <h3 class="coll_title">
+              Luxor <br />
+              Collection
+            </h3>
+            <p class="coll_desc">
+              We will measure your kitchen, <br />
+              ask you questions and start the <br />
+              actual design process with you.
+            </p>
+            <a class="coll_link" href="#">Read More</a>
+          </div>
+        </div>
+
+        <!-- ---------------------------------- Fourth Section  ------------------------------------>
+
+        <div class="why_us ">
+          <div class="container text-start my-5">
+            <span>Why Choose Us</span>
+            <h2 class="mt-5">We work to an extremely high <br> standard of customer satisfaction</h2>
+          </div>
+
+          <!-- icons  Sections -->
+
+          <div class="container-fluid">
+            <div class="row text-center ">
+              <div class="col-md-3 mt-5">
+                <div class="icon-box text-center">
+                  <i class="bi bi-tools mb-4"></i>
+                  <h4 class="mb-3 service-title">Full Service</h4>
+                  <p class="desc">Not sure where to start? Let us help. We can handle all aspects of your kitchen
+                    refresh. , from removing the old countertops..</p>
+                </div>
+              </div>
+              <div class="col-md-3 mt-5">
+                <div class="icon-box">
+                  <i class="bi bi-cash-stack  mb-4"></i>
+                  <h4 class="mb-3 service-title">Deliver Value</h4>
+                  <p class="desc">Value means many things to different people. We pledge to always provide optimal value
+                    for each and every client.</p>
+                </div>
+              </div>
+              <div class="col-md-3 mt-5">
+                <div class="icon-box">
+                  <i class="bi bi-people  mb-4"></i>
+                  <h4 class="mb-3 service-title ">Partners</h4>
+                  <p class="desc">Throughout all aspects of our business, we view our stakeholders as partners in our
+                    ultimate mission to make beautiful..</p>
+                </div>
+              </div>
+              <div class="col-md-3 mt-5">
+                <div class="icon-box">
+                  <i class="bi bi-shield-check  mb-4"></i>
+                  <h4 class="mb-3 service-title">Integrity</h4>
+                  <p class="desc">Relationships drive business forward, and our integrity forms the bedrock of our
+                    relationships. Our coworkers, dealers..</p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <!-- Middle: About Us Section -->
-          <div class="col-md-4 abt_info d-flex align-items-center ps-5">
-            <div>
-              <span class="mt-0">About Us</span>
-              <h2 class="mt-5">Creative solutions by professional designers</h2>
-            </div>
-          </div>
 
-          <!-- Right: Description and Button Section -->
-          <div class="col-md-4 text-center text-md-start abt_desc ps-5">
-            <p>
-              Your kitchen is an expression of who you are,<br />
-              and its design should match your lifestyle. <br />
-              Whether you have traditional tastes or desire a <br />
-              modern feel, we can design your dream kitchen <br />
-              to suit any purpose.
+  <!-- ---------------------------------- Promo Video Section  ------------------------------------>
+
+
+  <section class="promo-video-section py-5">
+    <div class="container">
+      <div class="row align-items-center promovideo">
+        <!-- Left Column -->
+        <div class="col-md-6  text-light">
+          <div class="content-wrapper custom-margin-top">
+            <span class="heading-title mb-3  mt-5 pb-4 ms-5">Promo Video</span>
+            <h2 class="subheading-title mb-2 mt-4  ms-5">
+              Ensuring a safe experience <br> from design to installation
+            </h2>
+            <p class="text-content mb-4 mt-4 ms-5">
+              We’re following all protocols to ensure your safety and <br>
+              vaccination drives are underway to ensure our employees <br> are
+              ready to meet you safely.
             </p>
-            <a href="https://demo2.themelexus.com/kitchor/about-us-01/">
-              Continue Reading <i class="fas fa-arrow-right ms-2"></i>
+            <a href="#" class="d-flex align-items-center mt-5 ms-5 gap-2">
+
+              MORE VIDEOS <i class="bi bi-play-circle"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-md-6 text-center">
+          <div class="video-wrapper position-relative">
+            <a href="https://www.youtube.com/watch?v=Z30Jk8QpAMI" class="video-popup d-inline-block position-relative"
+              role="button">
+              <img src="./images/About_09.jpg" alt="Promo Video Thumbnail" class="img-fluid right_img " />
+              <div class="video-content"></div>
+              <i class="bi bi-play video-icon"></i>
             </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ---------------------------------- Third Section   ------------------------------------>
-    <section class="collection whyus d-flex py-5 px-5">
-      <div class="container-fluid container">
-        <div class="row">
-          <div class="col-md-3 collections">
-            <div class="image-wrapper">
-              <img
-                src="./images/h2-banner1.jpg"
-                alt="Banner-1"
-                class="img-fluid"
-              />
-            </div>
-            <div class="coll-details">
-              <h3 class="coll_title">
-                Country <br />
-                Collection
-              </h3>
-              <p class="coll_desc">
-                We will measure your kitchen, <br />
-                ask you questions and start the <br />
-                actual design process with you.
-              </p>
-              <a class="coll_link" href="#">Read More</a>
-            </div>
-          </div>
-          <div class="col-md-3 collections">
-            <div class="image-wrapper">
-              <img
-                src="./images/h2-banner2.jpg"
-                alt="Banner-1"
-                class="img-fluid"
-              />
-            </div>
-            <div class="coll-details">
-              <h3 class="coll_title">
-                Concord <br />
-                Collection
-              </h3>
-              <p class="coll_desc">
-                We will measure your kitchen, <br />
-                ask you questions and start the <br />
-                actual design process with you.
-              </p>
-              <a class="coll_link" href="#">Read More</a>
-            </div>
-          </div>
-          <div class="col-md-3 collections">
-            <div class="image-wrapper">
-              <img
-                src="./images/h2-banner3.jpg"
-                alt="Banner-1"
-                class="img-fluid"
-              />
-            </div>
-            <div class="coll-details">
-              <h3 class="coll_title">
-                Classic <br />
-                Collection
-              </h3>
-              <p class="coll_desc">
-                We will measure your kitchen, <br />
-                ask you questions and start the <br />
-                actual design process with you.
-              </p>
-              <a class="coll_link" href="#">Read More</a>
-            </div>
-          </div>
-          <div class="col-md-3 collections">
-            <div class="image-wrapper">
-              <img
-                src="./images/h2-banner4.jpg"
-                alt="Banner-1"
-                class="img-fluid"
-              />
-            </div>
-            <div class="coll-details">
-              <h3 class="coll_title">
-                Luxor <br />
-                Collection
-              </h3>
-              <p class="coll_desc">
-                We will measure your kitchen, <br />
-                ask you questions and start the <br />
-                actual design process with you.
-              </p>
-              <a class="coll_link" href="#">Read More</a>
-            </div>
-          </div>
+  <hr class="my-5 mx-3">
 
-          <!-- ---------------------------------- Fourth Section  ------------------------------------>
+  <!-- ---------------------------------- Our Project Section   ------------------------------------>
 
-      <div class="why_us ">
-        <div class="container text-start my-5">
-          <span>Why Choose Us</span>
-          <h2 class="mt-5">We work to an extremely high <br> standard of customer satisfaction</h2>
+
+  <section class="ourproject mb-5">
+    <div class="container me-5">
+      <div class="row">
+        <div class="col-md-12 mt-5">
+          <div class="section-title text-center our_projects">
+            <span class="mt-5 mb-5">our Projects</span>
+            <h2>Explore our kitchen designs</h2>
+            <p>Explore finished kitchens from some of our customers and see how they created their <br> dream kitchen
+              while getting ideas for your own.</p>
+          </div>
         </div>
+        <div class="col-lg-4 col-md-12 our_projects_content ">
+          <div class="image-content">
+            <img src="./images/projects-12-850x520.jpg" alt="Project-12">
+            <div class="project-desc">
+              <h3 project-title>Kitchen Project 12</h3>
+              <div class="links">
+                <a href="#">Modern</a>
+                <span>/</span>
+                <a href="#">Top Seller</a>
+                <span>/</span>
+                <a href="#">Vintage</a>
 
-        <!-- icons  Sections -->
-         
-        <div class="container-fluid">
-        <div class="row text-center ">
-          <div class="col-md-3 mt-5">
-            <div class="icon-box text-center">
-              <i class="bi bi-tools mb-4"></i>
-              <h4 class="mb-3 service-title">Full Service</h4>
-              <p class="desc">Not sure where to start? Let us help. We can handle all aspects of your kitchen refresh. , from removing the old countertops..</p>
-            </div>
-          </div>
-          <div class="col-md-3 mt-5">
-            <div class="icon-box">
-              <i class="bi bi-cash-stack  mb-4"></i>
-              <h4 class="mb-3 service-title">Deliver Value</h4>
-              <p class="desc">Value means many things to different people. We pledge to always provide optimal value for each and every client.</p>
-            </div>
-          </div>
-          <div class="col-md-3 mt-5">
-            <div class="icon-box">
-              <i class="bi bi-people  mb-4"></i>
-              <h4 class="mb-3 service-title ">Partners</h4>
-              <p class="desc">Throughout all aspects of our business, we view our stakeholders as partners in our ultimate mission to make beautiful..</p>
-            </div>
-          </div>
-          <div class="col-md-3 mt-5">
-            <div class="icon-box">
-              <i class="bi bi-shield-check  mb-4"></i>
-              <h4 class="mb-3 service-title">Integrity</h4>
-              <p class="desc">Relationships drive business forward, and our integrity forms the bedrock of our relationships. Our coworkers, dealers..</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="col-lg-4 col-md-12 our_projects_content ">
+          <div class="image-content ">
+            <img src="./images/projects-11-850x520.jpg" alt="Project-11">
+            <div class="project-desc">
+              <h3 project-title>Kitchen Project 11</h3>
+              <div class="links">
+                <a href="#">Costel</a>
+                <span>/</span>
+                <a href="#">Top Seller</a>
+                <span>/</span>
+                <a href="#">Vintage</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 our_projects_content ">
+          <div class="image-content">
+            <img src="./images/projects-10-850x520.jpg" alt="Project-10">
+            <div class="project-desc">
+              <h3 project-title>Kitchen Project 10</h3>
+              <div class="links">
+                <a href="#">Costel</a>
+                <span>/</span>
+                <a href="#">Minimalist</a>
+                <span>/</span>
+                <a href="#">Smallspace</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 our_projects_content ">
+          <div class="image-content">
+            <img src="./images/projects-9-850x520.jpg" alt="Project-9">
+            <div class="project-desc">
+              <h3 project-title>Kitchen Project 9</h3>
+              <div class="links">
+                <a href="#">Smallspace</a>
+                <span>/</span>
+                <a href="#">Top Seller</a>
+                <span>/</span>
+                <a href="#">Vintage</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 our_projects_content ">
+          <div class="image-content">
+            <img src="./images/projects-8-850x520.jpg" alt="Project-8">
+            <div class="project-desc">
+              <h3 project-title>Kitchen Project 8</h3>
+              <div class="links">
+                <a href="#">Modern</a>
+                <span>/</span>
+                <a href="#">Smallspace</a>
+                <span>/</span>
+                <a href="#">Topseller</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 our_projects_content ">
+          <div class="image-content">
+            <img src="./images/projects-7-850x520.jpg" alt="Project-7">
+            <div class="project-desc">
+              <h3 project-title>Kitchen Project 7</h3>
+              <div class="links">
+                <a href="#">Bohemian</a>
+                <span>/</span>
+                <a href="#">Coastal</a>
+                <span>/</span>
+                <a href="#">Minimalist</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
-   </section>
+  </section>
+  <!----------------------------- Get an Estimate  ----------------------------------->
+  <section class="common-background dsp p-0 pt-0">
+    <div class="container">
+      <div class="row">
+        <!-- First Div with Image -->
+        <div class="col-md-6 image-div">
+          <img src="./images/h2-banner5.jpg" alt="banner" class="img-fluid"> <!-- Replace with your image URL -->
+        </div>
 
-
-<!-- ---------------------------------- Promo Video Section  ------------------------------------>
-
-
-<section class="promo-video-section py-5">
-  <div class="container">
-    <div class="row align-items-center promovideo">
-      <!-- Left Column -->
-      <div class="col-md-6  text-light">
-        <div class="content-wrapper custom-margin-top">
-          <span class="heading-title mb-3  mt-5 pb-4 ms-5">Promo Video</span>
-          <h2 class="subheading-title mb-2 mt-4  ms-5">
-            Ensuring a safe experience <br> from design to installation
-          </h2>
-          <p class="text-content mb-4 mt-4 ms-5">
-            We’re following all protocols to ensure your safety and <br>
-            vaccination drives are underway to ensure our employees  <br> are
-            ready to meet you safely.
+        <!-- Second Div with Logo, h3, and Paragraph -->
+        <div class="col-md-6 dsp-left">
+          <img src="./images/h2-framecolor.svg" alt="image" class="logo"> <!-- Replace with your logo URL -->
+          <h2>Stunning kitchens, <br> simplified process</h2>
+          <p>We’ve revamped the entire kitchen design process, <br> tailoring it around you. And, we partnered with
+            Germany’s <br> most popular kitchen manufacturer to offer studio-quality <br> kitchens at big-box prices.
           </p>
-          <a href="#" class="d-flex align-items-center mt-5 ms-5 gap-2">
-            
-            MORE VIDEOS <i class="bi bi-play-circle"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Right Column -->
-      <div class="col-md-6 text-center">
-        <div class="video-wrapper position-relative">
-          <a
-            href="https://www.youtube.com/watch?v=Z30Jk8QpAMI"
-            class="video-popup d-inline-block position-relative"
-            role="button"
-          >
-          <img
-              src="./images/About_09.jpg"
-              alt="Promo Video Thumbnail"
-              class="img-fluid right_img "
-            />
-            <div class="video-content"></div>
-            <i class="bi bi-play video-icon"></i>
-          </a>
+          <a href="#">Get an instant estimate <i class="fas fa-arrow-right ms-2"></i></a>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<hr class="my-5 mx-3">
-
-<!-- ---------------------------------- Our Project Section   ------------------------------------>
-
-
-<section class="ourproject mb-5">
-  <div class="container me-5">
-    <div class="row">
-      <div class="col-md-12 mt-5">
-        <div class="section-title text-center our_projects">
-          <span class="mt-5 mb-5">our Projects</span>
-          <h2>Explore our kitchen designs</h2>
-          <p>Explore finished kitchens from some of our customers and see how they created their <br> dream kitchen while getting ideas for your own.</p>
+  <!------------------------------ Our Clients Section -------------------------------- -->
+  <section class="our-clients pb-5">
+    <div class="container pt-5 ">
+      <div class="row ">
+        <div class="col-md-12 ">
+          <div class="section-title text-center ourclients">
+            <span>our clients</span>
+            <h2>Here's what our satisfied <br> clients are saying</h2>
+          </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-12 our_projects_content ">
-       <div class="image-content">
-          <img src="./images/projects-12-850x520.jpg" alt="Project-12">
-          <div class="project-desc">
-            <h3 project-title>Kitchen Project 12</h3>
-            <div class="links">
-              <a href="#">Modern</a>
-              <span>/</span>
-              <a href="#">Top Seller</a>
-              <span>/</span>
-              <a href="#">Vintage</a>
-
+        <div class="col-lg-6 col-md-12 testimonal-left">
+          <div class="testimonal-content ms-5">
+            <i class="bi bi-quote"></i>
+            <p>These are the most beautiful cabinets!! So well made. <br>
+              The contractor installing them said they’re some of the best he’s ever seen. Everyone that sees them wants
+              to know where I bought them.</p>
+            <div class="testimonal_ py-1">
+              <img src="./images/avatar_003.png" alt="">
+              <div class="author-info">
+                <h4>Joshua Keith</h4>
+                <span>Senior client</span>
+              </div>
             </div>
           </div>
-       </div>
-      </div>
-      <div class="col-lg-4 col-md-12 our_projects_content ">
-        <div class="image-content ">
-           <img src="./images/projects-11-850x520.jpg" alt="Project-11">
-           <div class="project-desc">
-             <h3 project-title>Kitchen Project 11</h3>
-             <div class="links">
-              <a href="#">Costel</a>
-              <span>/</span>
-              <a href="#">Top Seller</a>
-              <span>/</span>
-              <a href="#">Vintage</a> 
+        </div>
+        <div class="col-lg-6 col-md-12 testimonal-left">
+          <div class="testimonal-content">
+            <i class="bi bi-quote"></i>
+            <p>We carry Wellsford Cabinetry among several others for
+              our kitchen design and remodel services.
+              Wellsford has the best quality I have seen,
+              with fair pricing and excellent, excellent
+              customer service. They are my “go to” line.</p>
+            <div class="testimonal_ py-1">
+              <img src="./images/avatar_002.png" alt="">
+              <div class="author-info">
+                <h4>Sharon Gunther</h4>
+                <span>Fresh Design</span>
+              </div>
             </div>
-           </div>
-        </div>
-       </div>
-       <div class="col-lg-4 col-md-12 our_projects_content ">
-        <div class="image-content">
-           <img src="./images/projects-10-850x520.jpg" alt="Project-10">
-           <div class="project-desc">
-             <h3 project-title>Kitchen Project 10</h3>
-             <div class="links">
-              <a href="#">Costel</a>
-              <span>/</span>
-              <a href="#">Minimalist</a>
-              <span>/</span>
-              <a href="#">Smallspace</a>
-              
-            </div>
-           </div>
-        </div>
-       </div>
-       <div class="col-lg-4 col-md-12 our_projects_content ">
-        <div class="image-content">
-           <img src="./images/projects-9-850x520.jpg" alt="Project-9">
-           <div class="project-desc">
-             <h3 project-title>Kitchen Project 9</h3>
-             <div class="links">
-              <a href="#">Smallspace</a>
-              <span>/</span>
-              <a href="#">Top Seller</a>
-              <span>/</span>
-              <a href="#">Vintage</a>
-              
-            </div>
-           </div>
-        </div>
-       </div>
-       <div class="col-lg-4 col-md-12 our_projects_content ">
-        <div class="image-content">
-           <img src="./images/projects-8-850x520.jpg" alt="Project-8">
-           <div class="project-desc">
-             <h3 project-title>Kitchen Project 8</h3>
-             <div class="links">
-              <a href="#">Modern</a>
-              <span>/</span>
-              <a href="#">Smallspace</a>
-              <span>/</span>
-              <a href="#">Topseller</a>
-              
-            </div>
-           </div>
-        </div>
-       </div>
-       <div class="col-lg-4 col-md-12 our_projects_content ">
-        <div class="image-content">
-           <img src="./images/projects-7-850x520.jpg" alt="Project-7">
-           <div class="project-desc">
-             <h3 project-title>Kitchen Project 7</h3>
-             <div class="links">
-              <a href="#">Bohemian</a>
-              <span>/</span>
-              <a href="#">Coastal</a>
-              <span>/</span>
-              <a href="#">Minimalist</a>
-              
-            </div>
-           </div>
-        </div>
-       </div>
-  
-    </div>
-  </div>
-</section>
-<!----------------------------- Get an Estimate  ----------------------------------->
-<section class="common-background dsp p-0 pt-0">
-  <div class="container">
-    <div class="row">
-      <!-- First Div with Image -->
-      <div class="col-md-6 image-div">
-        <img src="./images/h2-banner5.jpg" alt="banner" class="img-fluid"> <!-- Replace with your image URL -->
-      </div>
-
-      <!-- Second Div with Logo, h3, and Paragraph -->
-      <div class="col-md-6 dsp-left">
-        <img src="./images/h2-framecolor.svg" alt="image" class="logo"> <!-- Replace with your logo URL -->
-        <h2 >Stunning kitchens, <br> simplified process</h2>
-        <p >We’ve revamped the entire kitchen design process, <br> tailoring it around you. And, we partnered with Germany’s <br> most popular kitchen manufacturer to offer studio-quality <br> kitchens at big-box prices.</p>
-        <a href="#">Get an instant estimate <i class="fas fa-arrow-right ms-2"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!------------------------------ Our Clients Section -------------------------------- -->
-<section class="our-clients pb-5">
-  <div class="container pt-5 ">
-    <div class="row ">
-      <div class="col-md-12 ">
-        <div class="section-title text-center ourclients">
-          <span>our clients</span>
-          <h2>Here's what our satisfied <br> clients are saying</h2>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-12 testimonal-left">
-        <div class="testimonal-content ms-5">
-          <i class="bi bi-quote"></i>
-          <p>These are the most beautiful cabinets!! So well made. <br>
-             The contractor installing them said they’re some of the best he’s  ever seen. Everyone that sees them wants to know where I bought them.</p>
-        <div class="testimonal_ py-1">
-          <img src="./images/avatar_003.png" alt="">
-          <div class="author-info">
-            <h4>Joshua Keith</h4>
-            <span>Senior client</span>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-lg-6 col-md-12 testimonal-left">
-      <div class="testimonal-content">
-        <i class="bi bi-quote"></i>
-        <p>We carry Wellsford Cabinetry among several others for 
-          our kitchen design and remodel services. 
-          Wellsford has the best quality I have seen, 
-          with fair pricing and excellent, excellent 
-          customer service. They are my “go to” line.</p>
-      <div class="testimonal_ py-1">
-        <img src="./images/avatar_002.png" alt="">
-        <div class="author-info">
-          <h4>Sharon Gunther</h4>
-          <span>Fresh Design</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-  
+
   </section>
 
   <!-----------------------------  Method Section ----------------------------->
@@ -680,187 +609,294 @@
       <div class="row">
         <!-- Left Section (Text Content) -->
         <div class="col-lg-6 col-md-12 method-left">
-            <span>METHOD</span>
-            <h2>A modern approach to design</h2>
-            <p>Work 1:1 with an experienced designer <br> to create your one-of-a-kind kitchen, <br> backed by a perfect fit guarantee.</p>
-            <a href="#">View Our Gallery <i class="fa-solid fa-arrow-right ms-1"> </i></a>
+          <span>METHOD</span>
+          <h2>A modern approach to design</h2>
+          <p>Work 1:1 with an experienced designer <br> to create your one-of-a-kind kitchen, <br> backed by a perfect
+            fit guarantee.</p>
+          <a href="#">View Our Gallery <i class="fa-solid fa-arrow-right ms-1"> </i></a>
         </div>
 
         <!-- Right Section (Image) -->
         <div class="col-lg-6 col-md-12 method-right">
-            <img src="./images/h2-banner6.jpg" alt="Design Image">
+          <img src="./images/h2-banner6.jpg" alt="Design Image">
         </div>
+      </div>
     </div>
-  </div>
   </section>
   <!-----------------------------  Completed Section Animation ----------------------------->
 
   <div class="pca">
     <div class="container">
-        <div class="row pt-5 justify-content-center align-items-center text-center">
-            <div class="col-12 col-md-6 col-lg-3 mb-4 pca-space">
-                <div class="finished-works">
-                    <span class="number" data-target="25">25</span>
-                    <span>+</span>
-                </div>
-                <div class="finished-works-name">
-                    <span class="name">Interior Design</span>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-4 pca-space">
-                <div class="finished-works">
-                    <span class="number" data-target="93">93</span>
-                    <span>+</span>
-                </div>
-                <div class="finished-works-name">
-                    <span class="name">Architecture</span>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-4 pca-space">
-                <div class="finished-works">
-                    <span class="number" data-target="48">48</span>
-                    <span>+</span>
-                </div>
-                <div class="finished-works-name">
-                    <span class="name">Construction</span>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mb-4 pca-space">
-                <div class="finished-works">
-                    <span class="number" data-target="68">68</span>
-                    <span>+</span>
-                </div>
-                <div class="finished-works-name">
-                    <span class="name">Projects Done</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<hr class="my-5 mx-5">
-<!-----------------blog section ------------->
-
-<section class="blogsection">
-  <div class="container">
-    <div class="row me-5 ms-5 mt-5 mb-5">
-      <div class="col-12 section-title text-center">
-        <span>Our Blog</span>
-        <h2>Follow the latest news</h2>
-      </div>
-      <div class="blog-container d-flex">
-        <!-- All blog cards -->
-        <div class="card-wrapper col-md-4">
-          <div class="card card-1">
-            <img src="./images/blog-1-850x540.jpg" class="card-img-top" alt="Image 6" />
-            <div class="card-body">
-              <h5 class="card-title">Another Blog Post of how we made kitchens world</h5>
-              <div class="card-info">
-                <span class="calendar_icon"><i class="bi bi-calendar"></i></span>
-                <span class="date">June 22, 2024</span>
-                <span class="dot">. By</span>
-                <span class="admin"> Admin</span>
-              </div>
-              <p class="card-text">Where the art comes into the equation is when creating the design elements of your kitchen....</p>
-              <a href="#" class="read-more">Read more</a>
-            </div>
+      <div class="row pt-5 justify-content-center align-items-center text-center">
+        <div class="col-12 col-md-6 col-lg-3 mb-4 pca-space">
+          <div class="finished-works">
+            <span class="number" data-target="25">25</span>
+            <span>+</span>
+          </div>
+          <div class="finished-works-name">
+            <span class="name">Interior Design</span>
           </div>
         </div>
-        <div class="card-wrapper col-md-4">
-          <div class="card card-2">
-            <img src="./images/blog-2-850x540.jpg" class="card-img-top" alt="Image 6" />
-            <div class="card-body">            
-              <h5 class="card-title">The Pros and cons of large format at Porcelain</h5>
-              <div class="card-info">
-                <span class="calendar_icon"><i class="bi bi-calendar"></i></span>
-                <span class="date">June 22, 2024</span>
-                <span class="dot">. By</span>
-                <span class="admin"> Admin</span>
-              </div>
-              <p class="card-text">Where the art comes into the equation is when creating the design elements of your kitchen....</p>
-              <a href="#" class="read-more">Read more</a>
-            </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4 pca-space">
+          <div class="finished-works">
+            <span class="number" data-target="93">93</span>
+            <span>+</span>
+          </div>
+          <div class="finished-works-name">
+            <span class="name">Architecture</span>
           </div>
         </div>
-        <div class="card-wrapper col-md-4">
-          <div class="card card-3">
-            <img src="./images/blog-3-850x540.jpg" class="card-img-top" alt="Image 6" />
-            <div class="card-body">
-              <h5 class="card-title">A Stunning Classic Shaker Kitchen In Halesowen</h5>
-              <div class="card-info">
-                <span class="calendar_icon"><i class="bi bi-calendar"></i></span>
-                <span class="date">June 22, 2024</span>
-                <span class="dot">. By</span>
-                <span class="admin"> Admin</span>
-              </div>
-              <p class="card-text">Where the art comes into the equation is when creating the design elements of your kitchen....</p>
-              <a href="#" class="read-more">Read more</a>
-            </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4 pca-space">
+          <div class="finished-works">
+            <span class="number" data-target="48">48</span>
+            <span>+</span>
+          </div>
+          <div class="finished-works-name">
+            <span class="name">Construction</span>
           </div>
         </div>
-        <div class="card-wrapper col-md-4">
-          <div class="card card-4">
-            <img src="./images/blog-4-850x540.jpg" class="card-img-top" alt="Image 6" />
-            <div class="card-body">
-              <h5 class="card-title">How To Choose A Paint Color For Your Walls When Remodeling</h5>
-                <div class="card-info">
-                <span class="calendar_icon"><i class="bi bi-calendar"></i></span>
-                <span class="date">June 22, 2024</span>
-                <span class="dot">. By</span>
-                <span class="admin"> Admin</span>
-              </div>
-              <p class="card-text">Where the art comes into the equation is when creating the design elements of your kitchen....</p>
-              <a href="#" class="read-more">Read more</a>
-            </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4 pca-space">
+          <div class="finished-works">
+            <span class="number" data-target="68">68</span>
+            <span>+</span>
           </div>
-        </div>
-        <div class="card-wrapper col-md-4">
-          <div class="card card-5">
-            <img src="./images/blog-5-850x540.jpg" class="card-img-top" alt="Image 6" />
-            <div class="card-body">
-              <h5 class="card-title">Before and after a modern kitchen with larger space</h5>
-              <div class="card-info">
-                <span class="calendar_icon"><i class="bi bi-calendar"></i></span>
-                <span class="date">June 22, 2024</span>
-                <span class="dot">. By</span>
-                <span class="admin"> Admin</span>
-              </div>
-              <p class="card-text">Where the art comes into the equation is when creating the design elements of your kitchen....</p>
-              <a href="#" class="read-more">Read more</a>
-            </div>
-          </div>
-        </div>
-        <div class="card-wrapper col-md-4">
-          <div class="card card-6">
-            <img src="./images/blog-1-850x540.jpg" class="card-img-top" alt="Image 6" />
-            <div class="card-body">
-              <h5 class="card-title">The Hesitant Homeowner – What Makes Us Delay Remodeling?</h5>
-              <div class="card-info">
-                <span class="calendar_icon"><i class="bi bi-calendar"></i></span>
-                <span class="date">June 22, 2024</span>
-                <span class="dot">. By</span>
-                <span class="admin"> Admin</span>
-              </div>
-              <p class="card-text">Where the art comes into the equation is when creating the design elements of your kitchen....</p>
-              <a href="#" class="read-more">Read more</a>
-            </div>
+          <div class="finished-works-name">
+            <span class="name">Projects Done</span>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+  <hr class="my-5 mx-5">
+  <!-----------------blog section ------------->
+
+  <section class="blogsection">
+    <div class="container">
+      <div class="row me-5 ms-5 mt-5 mb-5">
+        <div class="col-12 section-title text-center">
+          <span>Our Blog</span>
+          <h2>Follow the latest news</h2>
+        </div>
+        <div class="blog-container d-flex">
+          <!-- All blog cards -->
+          <div class="card-wrapper col-md-4">
+            <div class="card card-1">
+              <img src="./images/blog-1-850x540.jpg" class="card-img-top" alt="Image 6" />
+              <div class="card-body">
+                <h5 class="card-title">Another Blog Post of how we made kitchens world</h5>
+                <div class="card-info">
+                  <span class="calendar_icon"><i class="fa fa-calendar"></i></span>
+                  <span class="date">June 22, 2024</span>
+                  <span class="dot">. By</span>
+                  <span class="admin"> Admin</span>
+                </div>
+                <p class="card-text">Where the art comes into the equation is when creating the design elements of your
+                  kitchen....</p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrapper col-md-4">
+            <div class="card card-2">
+              <img src="./images/blog-2-850x540.jpg" class="card-img-top" alt="Image 6" />
+              <div class="card-body">
+                <h5 class="card-title">The Pros and cons of large format at Porcelain</h5>
+                <div class="card-info">
+                  <span class="calendar_icon"><i class="fa fa-calendar"></i></span>
+                  <span class="date">June 22, 2024</span>
+                  <span class="dot">. By</span>
+                  <span class="admin"> Admin</span>
+                </div>
+                <p class="card-text">Where the art comes into the equation is when creating the design elements of your
+                  kitchen....</p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrapper col-md-4">
+            <div class="card card-3">
+              <img src="./images/blog-3-850x540.jpg" class="card-img-top" alt="Image 6" />
+              <div class="card-body">
+                <h5 class="card-title">A Stunning Classic Shaker Kitchen In Halesowen</h5>
+                <div class="card-info">
+                  <span class="calendar_icon"><i class="fa fa-calendar"></i></span>
+                  <span class="date">June 22, 2024</span>
+                  <span class="dot">. By</span>
+                  <span class="admin"> Admin</span>
+                </div>
+                <p class="card-text">Where the art comes into the equation is when creating the design elements of your
+                  kitchen....</p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrapper col-md-4">
+            <div class="card card-4">
+              <img src="./images/blog-4-850x540.jpg" class="card-img-top" alt="Image 6" />
+              <div class="card-body">
+                <h5 class="card-title">How To Choose A Paint Color For Your Walls When Remodeling</h5>
+                <div class="card-info">
+                  <span class="calendar_icon"><i class="fa fa-calendar"></i></span>
+                  <span class="date">June 22, 2024</span>
+                  <span class="dot">. By</span>
+                  <span class="admin"> Admin</span>
+                </div>
+                <p class="card-text">Where the art comes into the equation is when creating the design elements of your
+                  kitchen....</p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrapper col-md-4">
+            <div class="card card-5">
+              <img src="./images/blog-5-850x540.jpg" class="card-img-top" alt="Image 6" />
+              <div class="card-body">
+                <h5 class="card-title">Before and after a modern kitchen with larger space</h5>
+                <div class="card-info">
+                  <span class="calendar_icon"><i class="fa fa-calendar"></i></span>
+                  <span class="date">June 22, 2024</span>
+                  <span class="dot">. By</span>
+                  <span class="admin"> Admin</span>
+                </div>
+                <p class="card-text">Where the art comes into the equation is when creating the design elements of your
+                  kitchen....</p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrapper col-md-4">
+            <div class="card card-6">
+              <img src="./images/blog-1-850x540.jpg" class="card-img-top" alt="Image 6" />
+              <div class="card-body">
+                <h5 class="card-title">The Hesitant Homeowner – What Makes Us Delay Remodeling?</h5>
+                <div class="card-info">
+                  <span class="calendar_icon"><i class="fa fa-calendar"></i></span>
+                  <span class="date">June 22, 2024</span>
+                  <span class="dot">. By</span>
+                  <span class="admin"> Admin</span>
+                </div>
+                <p class="card-text">Where the art comes into the equation is when creating the design elements of your
+                  kitchen....</p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-top text-center">
+            <span>you Dream it , we design it</span>
+            <h2>We can build you the kitchen <br> of your dreams</h2>
+            <a href="">schedule a chat <i class="fa fa-calendar" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <hr>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-middle mt-5 pt-5 ">
+            <div class="logo-bottom">
+              <img src="./images/logo-2.svg" alt="logo">
+              <span>Subscribe to receive inspiration, ideas,and news in your inbox.</span>
+            </div>
+            <div class="call">
+              <i class="fa-solid fa-phone-volume me-2"></i>
+              <h5> +1875 333 489 </h5>
+              <span>Round-the-clock</span>
+            </div>
+            <div class="sm-icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-pinterest"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="single-footer-widget pt-5">
+            <h3 class="footer-head">Aboutus</h3>
+            <ul class="links-list  list-unstyled">
+              <li class="mb-4"><a href="#hero-section" class="text-decoration-none">About US</a></li>
+
+              <li class="mb-4"><a href="" class="text-decoration-none">Ourteam</a></li>
+
+              <li class="mb-4"><a href="" class="text-decoration-none">Testimonals</a></li>
+
+              <li class="mb-4"><a href="" class="text-decoration-none">Reviews</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6 margint-md">
+          <div class="single-footer-widget pt-5">
+            <h3 class="footer-head">Explore</h3>
+            <ul class="links-list ps-0 list-unstyled">
+              <li class="mb-4"><a href="" class="text-decoration-none">Kitchen Cabinets</a></li>
+              <li class="mb-4"><a href="" class="text-decoration-none">CounterTops</a></li>
+
+              <li class="mb-4"><a href="" class="text-decoration-none">Bathroom vanities</a></li>
+
+              <li class="mb-4"><a href="" class="text-decoration-none">Vanity tops</a></li>
+
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6 margint-md">
+          <div class="single-footer-widget pt-5">
+            <h3 class="footer-head">QuickLinks</h3>
+            <ul class="links-list ps-0 list-unstyled">
+              <li class="mb-4"><a href="" class="text-decoration-none">FAQ</a></li>
+              <li class="mb-4"><a href="" class="text-decoration-none">Blog</a></li>
+
+              <li class="mb-4"><a href="" class="text-decoration-none">Design & Quote</a></li>
+
+              <li class="mb-4"><a href="" class="text-decoration-none">Warranty
+                </a></li>
+
+              <li class="mb-4"><a href="" class="text-decoration-none">Design</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 margint-md">
+          <div class="single-footer-widget pt-5">
+            <h3 class="footer-head">Subscribe to our Newsletter
+            </h3>
+            <p class="sub-p">Subscribe to receive inspiration, ideas, and news in your inbox.</p>
+            <form action="" class="newsletter-form position-relative ">
+              <input type="email" class="input-newsletter d-block w-100 ps-2 pt-2 pb-2 p-2" placeholder="Your Email" name="email" required
+                autocomplete="off">
+              <button type="submit" class="position-absolute border-0"> <img src="./Assets/Images/Footer/send-icon.png"
+                  alt="send-icon" width="20"></button>
+            </form>
+
+          </div>
+        </div>
+
+        <hr>
+        <div class="copyright-area text-center py-5">
+          <p>© Copyright 2022 kitchor. All rights reserved. By karthickyuvan.</p>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </footer>
+
+  <!-- Script section -->
 
 
 
-    <!-- Script section -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
 
-  
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </body>
 </html>
